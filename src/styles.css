@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.header {
+	text-align: center;
+}
+
+.codeContainer {
+	background-color: #dee1e5;
+	width : 90%;
+	margin: 0 auto;
+}

@@ -9,7 +9,7 @@ console.print = (stuff) => {
 }
 var videogamesUrl = "http://localhost:8000/videogames.json";
 var menuUrl = "http://localhost:8000/chipotleMenu";
-var videogames;
+var menu;
 
 
 // --------- XMLHttpRequest -----------
@@ -20,7 +20,7 @@ var videogames;
 
 	var oReq = new XMLHttpRequest();
 	oReq.addEventListener("load", reqListener);
-	oReq.open("GET", "http://www.example.org/example.txt");
+	oReq.open("GET", apiUrl);
 	oReq.send();
 */
 
@@ -35,18 +35,17 @@ var videogames;
 	});
 */
 
+// -----fetch API (new standard) -------
 
-// ------------ fetch API (new standard) -------------
+// fetch(menuUrl)
+// 	.then(function(res) {
+// 		return res.json();
+// 	})
+// 	.then(function(data) {
+// 		menu = data;
+// 		console.print(menu.slice(0,10));
+// 	})
 
-
-/*
-fetch(menuUrl)
-	.then(res => res.json())
-	.then(data => {
-		videogames = data;
-		console.print(data.slice(0,10));
-	})
-*/
 
 
 

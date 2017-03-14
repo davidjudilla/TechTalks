@@ -7,7 +7,8 @@ console.print = (stuff) => {
 		code.innerText = stuff
 	}
 }
-var apiUrl = "http://localhost:8000/videogames.json";
+var videogamesUrl = "http://localhost:8000/videogames.json";
+var menuUrl = "http://localhost:8000/chipotleMenu";
 var videogames;
 
 
@@ -38,7 +39,7 @@ var videogames;
 // ------------ fetch API (new standard) -------------
 
 
-	fetch(apiUrl)
+	fetch(menuUrl)
 		.then(res => res.json())
 		.then(data => {
 			videogames = data;

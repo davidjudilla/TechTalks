@@ -1,4 +1,5 @@
 # Web Dev and JS Essentials Tech Talk
+# techtalk.davidjudilla.com
 # Topics
 1. [Web APIs](#web-apis)
 2. [Array Methods](#array-methods)

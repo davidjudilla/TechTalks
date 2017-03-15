@@ -1,4 +1,4 @@
-console.print = (stuff) => {
+print = (stuff) => {
 	const code = document.querySelector('.code');
 	console.log(JSON.stringify(stuff, null, 2))
 	if (typeof stuff == "object") {
@@ -25,26 +25,27 @@ var menu;
 */
 
 // ----------- $.ajax -----------------
-
 /*
 	$.ajax({
-		url: apiUrl, 
+		url: menuUrl, 
 		success: function(data){
-			console.log(data);
+			console.print(data);
 	    }
 	});
 */
 
 // -----fetch API (new standard) -------
 
-// fetch(menuUrl)
-// 	.then(function(res) {
-// 		return res.json();
-// 	})
-// 	.then(function(data) {
-// 		menu = data;
-// 		console.print(menu.slice(0,10));
-// 	})
+/*
+fetch(menuUrl)
+	.then(function(res) {
+		return res.json();
+	})
+	.then(function(data) {
+		menu = data;
+		print(menu.slice(0,10));
+	})
+*/
 
 
 
